@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="hu"
+
+ <head>
+    <title> Tantárgy Tematika</title>
+    <meta content="text/html; charset=UTF-8">
+ </head>
+
+  <body style="background: transparent; color: white; font-size: 10pt; font-family: tahoma;">
+        <br><br><br>
+        <section id="tartalom" style="float: right;">
+
+            <header style="font-size: 16pt; color: rgb(17, 214, 46); font-family: tahoma;">
+                Érdekesség a Fibonacci sorozatról
+            </header>
+
+            <video id="videom" width="520" controls >
+                <source src="kepek/Nature by Numbers.mp4" type="video/mp4">
+                A böngésződ nem támogatja a HTML videók lejátszását.
+            </video>
+    
+            <br /><br />
+    
+            <button onClick="videom.play()">indítás </button>
+            <button onClick="videom.pause()">leállítás</button>
+            &nbsp;&nbsp;&nbsp;
+            <button onClick="indit_leallit()">indítás / leállítás</button>
+    
+            <br />Videó hang beállítások<br />
+    
+            <button onClick="videom.volume=0">néma</button>
+            <button onClick="videom.volume=0.2">halk</button>
+            <button onClick="videom.volume=1">hangos</button>
+    
+            <br /> Lejátszási sebesség<br />
+    
+            <button onClick="videom.playbackRate=0.2">nagyon lassú</button>
+            <button onClick="videom.playbackRate=0.5">lassú</button>
+            <button onClick="videom.playbackRate=1">normál</button>
+            <button onClick="videom.playbackRate=2">gyorsabb</button>
+            <button onClick="videom.playbackRate=4">nagyon gyors</button>
+    
+            <br /> Videóméret<br />
+    
+            <button onClick="videom.width=260">kicsi</button>
+            <button onClick="videom.width=520">normál</button>
+            <button onClick="videom.width=1040">nagy</button>
+    
+            <br />Információk<br />
+    
+            <button onClick="alert(videom.ended)">befejeződött-e</button>
+            <button onClick="alert(videom.duration)">videó hossza (mp)</button>
+            <button onClick="alert(videom.currentTime)">jelenlegi pozíció</button>
+
+            <footer id="lablec" class="lablec">
+                Videó forrás:
+                <a href="https://www.youtube.com/watch?v=kkGeOWYOFoA" target="ujablak">
+                    https://www.youtube.com/watch?v=kkGeOWYOFoA
+                </a>
+            </footer>
+    
+        </section>
+        <script>
+
+            var videom = document.getElementById('videom');
+    
+            function indit_leallit() {
+                if (videom.paused) {
+                    videom.play();
+                }
+                else {
+                    videom.pause();
+                }
+            }
+    
+        </script>
+
+    <font style="font-size:18pt;"><b>Matematikai analízis I </b></font>
+    <br><br>
+    Ez a kurzus a matematikai analizis alapjainak elsajátításával foglalkozik.
+    <br><br>
+    <b>Tematika</b>
+    <ul>
+        <li>1. hét:<br> Halmazelméleti alapfogalmak, műveletek halmazokkal. Részhalmazok és komplementerek tulajdonságai
+        <li>2. hét:<br> Rendezett elempárok. Halmazok direkt szorzata. A direkt szorzat tulajdonságai. Bináris relációk. A 
+            függvény fogalma, helyettesítési értéke. Szűrjektív, injektív és bijektív függvény. Összetett és inverz 
+            függvény.
+        <li>3. hét:<br> Racionális és irracionális számok. A valós számok halmaza. Korlátos halmaz, pontos alsó és felső 
+            korlát.<br> Teljes indukció elve. Bernoulli-féle egyenlőtlenség. Valós szám abszolút értéke. Intervallumok. 
+        <li>4. hét:<br> Numerikus sorozatok. Korlátos sorozatok. Konvergens sorozatok. Sorozatok torlódási pontja. Konvergens sorozatok tulajdonságai. Végtelenhez divergáló sorozat.
+        <li>5. hét:<br> Rendőr-elv. Bolzano-Weierstrass-féle kiválasztási tétel. Cauchy-sorozatok. Cauchy-féle konvergencia 
+            kritérium. Nevezetes sorozatok. Numerikus sorok, konvergencia kritériumok pozitív tagú sorokra. Nevezetes sorok.
+        <li>6. hét:<br> Alternáló sorok, Leibniz-kritérium.
+            Egyváltozós valós függvény. Összetett függvény, inverz függvény. Monotonitás és korlátosság. Konvex, konkáv, páros, páratlan, periodikus függvények. Függvény minimuma és maximuma. Egyváltozós függvény határértéke. Baloldali és jobboldali határérték. Végtelen határérték, határérték a végtelenben
+        <li>7. hét:<br> I. zárthelyi dolgozat
+        <li>8. hét:<br> Oktatási szünet
+        <li>9. hét:<br> Folytonos függvények. Balról, ill. jobbról folytonos függvény fogalma. Szakadási helyek. Egyenletes 
+            folytonosság. Szakaszonként lineáris függvények.
+        <li>10. hét:<br> Nevezetes függvények (racionális egész és racionális törtfüggvények, trigonometrikus függvények és 
+            inverzeik, hiperbolikus függvények és inverzeik). Függvénysorozatok és függvénysorok. Hatványsorok. Elemi függvények.            
+        <li>11. hét:<br> Egyváltozós függvény differenciálhányadosának fogalma. Elemi függvények deriváltjai. Differenciálási szabályok. A differenciálszámítás középérték tételei.
+        <li>12. hét:<br> A differenciálszámítás alkalmazásai. Érintő, normális egyenlete. Taylor-polinom, Taylor-formula. 
+            L’Hospital-szabály. Teljes függvényvizsgálat.
+        <li>13. hét:<br> II. zárthelyi dolgozat
+        <li>14. hét:<br> Paraméteres és polárkoordinátás megadású görbék.
+            Pótzárthelyi dolgozatok.
+    </ul>
+    
+
+ </body>
